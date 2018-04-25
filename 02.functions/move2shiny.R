@@ -1,0 +1,22 @@
+
+move2shiny <- function(){
+  file.copy(from = "01.models/01.dfm/kfmult_model.rds", to = "06.shiny/data/kfmult_model.rds", overwrite = T)
+  file.copy(from = "01.models/01.dfm/kfuniv_model.rds", to = "06.shiny/data/kfuniv_model.rds", overwrite = T)
+  #file.copy(from = "01.models/01.dfm/dfm_model.rds", to = "06.shiny/data/dfm_model.rds", overwrite = T)
+  file.copy(from = "01.models/03.sarima/sarima_model.rds", to = "06.shiny/data/sarima_model.rds", overwrite = T)
+  file.copy(from = "01.models/04.regression/regression_model.rds", to = "06.shiny/data/regression_model.rds", overwrite = T)
+  file.copy(from = "01.models/04.regression/regression_model_ipea.rds", to = "06.shiny/data/regression_model_ipea.rds", overwrite = T)
+  file.copy(from = "01.models/06.lasso/lasso_model.rds", to = "06.shiny/data/lasso_model.rds", overwrite = T)
+  file.copy(from = "01.models/06.lasso/ridge_model.rds", to = "06.shiny/data/ridge_model.rds", overwrite = T)
+  file.copy(from = "01.models/07.forest/regtree_model.rds", to = "06.shiny/data/regtree_model.rds", overwrite = T)
+  file.copy(from = "01.models/07.forest/rf_model.rds", to = "06.shiny/data/rf_model.rds", overwrite = T)
+  file.copy(from = "01.models/05.combination/comb_model.rds", to = "06.shiny/data/comb_model.rds", overwrite = T)
+  file.copy(from = "01.models/05.combination/erros_rmse.rds", to = "06.shiny/data/erros_rmse.rds", overwrite = T)
+  file.copy(from = "01.models/05.combination/erros_mape.rds", to = "06.shiny/data/erros_mape.rds", overwrite = T)
+  file.copy(from = "01.models/05.combination/prev_individuais.rds", to = "06.shiny/data/prev_individuais.rds", overwrite = T)
+  file.copy(from = "00.data/pim_semajuste.rds", to = "06.shiny/data/pim_semajuste.rds", overwrite = T)
+  file.copy(from = "00.data/pim_comajuste.rds", to = "06.shiny/data/pim_comajuste.rds", overwrite = T)
+  file.copy(from = "00.data/database.rds", to = "06.shiny/data/database.rds", overwrite = T)
+  saveRDS(mercado, "06.shiny/data/market.rds")
+  file.copy(from = "00.data/monthFcst.rds", to = "06.shiny/data/monthFcst.rds", overwrite = T)
+}
